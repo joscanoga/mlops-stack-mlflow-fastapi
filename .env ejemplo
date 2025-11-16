@@ -1,0 +1,18 @@
+#variables de entorno de ejemplo para el proyecto
+#modicarlas segun tus necesidades
+# Variables para la Base de Datos PostgreSQL
+POSTGRES_USER=admin
+POSTGRES_PASSWORD=admin
+POSTGRES_DB_MLFLOW=mlflow_db
+POSTGRES_DB_AIRFLOW=airflow_db
+
+# UID/GID de Airflow para permisos
+# En la mayoría de sistemas Linux/Mac es 50000. En Windows puedes omitirlo o poner 1000.
+AIRFLOW_UID=50000
+
+# Variables para la configuración de MLflow
+# ... (las variables de postgres que ya tenías) ...
+
+# Variables para la configuración de Airflow
+# Secret key para Airflow (puedes generar una nueva si lo deseas)
+AIRFLOW__WEBSERVER__SECRET_KEY=gN-_gN4DD_yNAn2vN_yNAn-_gN4D-yNAgN4DD_yNAnE

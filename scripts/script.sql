@@ -1,0 +1,1 @@
+--archivo de ejemplo para scripts sql para usar en el proyecto 
