@@ -354,6 +354,10 @@ curl -X POST "http://localhost:8000/predict_btc_trend" \
   ```
 - Asegúrate de que no haya errores de sintaxis en tu DAG
 
+### database "mlflow_db" does not exist
+**Soluciones:**
+- Revisar el formato del archivo `postgres_init/init-databases.sh` para asegurarse de que la base de datos `mlflow_db` se esté creando correctamente al iniciar el contenedor de PostgreSQL, este debe ser LF y no CRLF.
+
 ### MLflow no guarda los experimentos
 
 **Soluciones:**
